@@ -35,12 +35,12 @@ const SideBar = ({ hideSideBar, toggleButton }) => {
           </button>
           {toggleButton && <button className="absolute left-2 bg-transparent border-none cursor-pointer rounded-full w-7.5 h-7.5 p-1 hover:bg-gray-300" onClick={hideSideBar}><HiOutlineMenuAlt2 size={24} /></button>}
         </div>
-        <div className="flex items-end">
-          <div className="bg-gray-200 flex items-center justify-between rounded-3xl py-2.5 px-4 w-28 mt-3 cursor-pointer hover:bg-gray-300">
+        <div className="flex items-end group">
+          <div className="bg-gray-200 shadow-md flex items-center justify-between rounded-3xl py-2.5 px-4 w-28 mt-3 cursor-pointer hover:bg-gray-300">
             <FaPlus size={24} color="#5e5f67" />
             <p className="ml-0.5 text-sm">Create</p>
           </div>
-          <div className="bg-gray-200 p-1 rounded-xl absolute z-10 left-32 top-16 invisible transition-all duration-500">
+          <div className="bg-gray-200 p-1 rounded-xl absolute z-10 left-32 top-16 invisible transition-all duration-500 group-hover:visible">
             <div className="flex items-center py-2.5 px-3 rounded-lg cursor-pointer hover:bg-gray-300">
               <BiSolidUserPlus className="text-gray-500 text-lg border-2 border-gray-300 rounded p-0.5" />
               <p className="text-gray-700 text-base ml-3.5 mr-5">Character</p>
